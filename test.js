@@ -8,8 +8,11 @@ let saveBtn=document.getElementById('save');
     title=inputtext.value;
     description=desc.value;
     let topic=document.createElement('p');
+    let btn=document.createElement('button');
+    btn.innerHTML="delete";
     topic.innerHTML=title;
     res.appendChild(topic);
+    res.appendChild(btn);
  });
  
  res.addEventListener('click',(e) =>{
