@@ -1,0 +1,55 @@
+body{
+    margin-left:450px;
+}
+.form{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    padding:10px;
+    border:1px solid black;
+    width:40%;
+    background-color: bisque;
+}
+#title,#description{
+    width:90%;
+    margin:20px;
+}
+#save{
+    background-color: rgb(107, 106, 163);
+    color:white;
+    border-radius: 5px;
+    margin-left:40%;
+    padding:10px;
+    width:100px
+}
+#save:hover{
+    color:black;
+    background-color: aquamarine;
+}
+input[type="text"], textarea, input[type="submit"] {
+    display: block;
+    margin-bottom: 10px;
+}
+@media screen and (max-width:750px) {
+    body{
+        margin-left:200px;
+    }
+    .form{
+        width:340px;
+    }
+}
+@media screen and (max-width:640px) {
+    body{
+        margin-left:120px;
+    }
+}
+@media screen and (max-width:530px) {
+    body{
+        margin-left:60px;
+    }
+}
+@media screen and (max-width:450px) {
+    body{
+        margin-left:20px;
+    }
+}
