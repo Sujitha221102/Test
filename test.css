@@ -30,6 +30,18 @@ input[type="text"], textarea, input[type="submit"] {
     display: block;
     margin-bottom: 10px;
 }
+#edit{
+    background-color: aliceblue;
+}
+#cancel{
+    background-color: beige;
+}
+#result{
+    width:fit-content;
+}
+#close{
+    float:right;
+}
 @media screen and (max-width:750px) {
     body{
         margin-left:200px;
@@ -52,4 +64,28 @@ input[type="text"], textarea, input[type="submit"] {
     body{
         margin-left:20px;
     }
+}
+#popupbg{
+    display: none;
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(194, 186, 244, 0.483);
+    z-index: 999;
+}
+#popup{
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width:180px;
+    height:150px;
+    overflow: auto;
+    background-color:#eae4e4;
+    font-size: 14px;
+    padding: 10px;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
 }
