@@ -96,6 +96,7 @@ document.addEventListener('DOMContentLoaded', function() {
             popup.style.display = "none";
             document.getElementById('title').value = data.title;
             document.getElementById('description').value = data.description;
+            toggleEditMode(index);
         });
     }
     displayFormData();
